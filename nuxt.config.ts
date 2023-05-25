@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"]
   },
+  
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -24,10 +25,8 @@ export default defineNuxtConfig({
   },
   modules: [
     [
-      "unplugin-icons/nuxt",
-      {
-        /* options */
-      }
-    ]
+      "unplugin-icons/nuxt",{}
+    ],
+    '@nuxtjs/tailwindcss'
   ]
 });

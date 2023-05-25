@@ -49,6 +49,27 @@
         </div>
       </div>
     </div>
+    <div id="storyMap">
+      <div class="flex p-20">
+        <iframe
+          class="map"
+          src="https://uploads.knightlab.com/storymapjs/25135f6713fc12c0ea89d828ab9e34d6/abc/draft.html"
+          frameborder="0"
+          width="100%"
+          height="400"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="carousel">
+    <v-carousel hide-delimiters>
+      <v-carousel-item
+        class="max-w-lg justify-center"
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+      ></v-carousel-item>
+    </v-carousel>
   </div>
   <div :style="{ backgroundColor: state.elementColor }">
     <!-- 其他组件内容 -->
@@ -62,6 +83,21 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   setup() {
+    const items = ref([
+      {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        src: "https://hackmd.io/_uploads/B187wj2H3.jpg"
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+      }
+    ]);
     const state = reactive({
       elementColor: "" // 初始化元素颜色
     });
@@ -118,7 +154,8 @@ export default {
     );
 
     return {
-      state
+      state,
+      items
     };
   }
 };
@@ -130,140 +167,126 @@ export default {
   background-color: rgba(196, 187, 184, 0.45);
 }
 //banner-part-start
-
-@media (max-width: 768px) {
-  #banner {
-    background: url("../assets/bannerImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    // height: 100vh;
-  }
-  .topic {
-    height: 5rem;
-    padding-top: 5rem;
-    padding-left: 2rem;
-    h1 {
-      font-size: 40px;
-      height: auto;
-      line-height: normal;
-      color: #c4b4a5;
-      font-weight: 700;
-      font-family: "Cormorant Infant", Georgia, "Times New Roman", serif;
+#banner {
+  background: url("../assets/background/bannerImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // height: 100vh;
+  @media (max-width: 768px) {
+    .topic {
+      height: 5rem;
+      padding-top: 5rem;
+      padding-left: 2rem;
+      h1 {
+        font-size: 40px;
+        height: auto;
+        line-height: normal;
+        color: #c4b4a5;
+        font-weight: 700;
+        font-family: "Cormorant Infant", Georgia, "Times New Roman", serif;
+      }
     }
-  }
-  .subtitle {
-    padding-top: 15rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    h1 {
-      margin-left: 6rem;
-      font-weight: 800;
-      font-size: 50px;
-      color: #c4b4a5;
-    }
-    #wineCabinet {
-      margin-top: 5rem;
-
-      width: 400px;
+    .subtitle {
+      padding-top: 15rem;
       overflow: hidden;
-    }
-  }
-}
-@media (max-width: 1200px) and (min-width: 768px) {
-  #banner {
-    background: url("../assets/bannerImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    //height: 80vh;
-  }
-  .topic {
-    height: 5rem;
-    padding-top: 5rem;
-    padding-left: 5rem;
-    h1 {
-      font-size: 60px;
-      height: auto;
-      line-height: normal;
-      color: #c4b4a5;
-      font-weight: 700;
-      font-family: "Cormorant Infant", Georgia, "Times New Roman", serif;
-    }
-  }
-  .subtitle {
-    padding-top: 10rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: start;
-    margin-left: 5rem;
-    flex-wrap: nowrap;
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      h1 {
+        margin-left: 6rem;
+        font-weight: 800;
+        font-size: 50px;
+        color: #c4b4a5;
+      }
+      #wineCabinet {
+        margin-top: 5rem;
 
-    h1 {
-      width: 15rem;
-      margin-top: 2rem;
-      font-weight: 800;
-      font-size: 40px;
-      color: #c4b4a5;
-    }
-    #wineCabinet {
-      // position: absolute;
-      // right: 0%;
-      // top: 50%;
-      width: 500px;
+        width: 400px;
+        overflow: hidden;
+      }
     }
   }
-}
-@media (min-width: 1200px) {
-  #banner {
-    background: url("../assets/bannerImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    // height: 100vh;
-  }
-  .topic {
-    height: 5rem;
-    padding-top: 3rem;
-    padding-left: 12rem;
-    h1 {
-      height: auto;
-      line-height: normal;
-      color: #c4b4a5;
-      font-weight: 700;
-      font-family: "Cormorant Infant", Georgia, "Times New Roman", serif;
-      font-size: 80px;
+  @media (max-width: 1200px) and (min-width: 768px) {
+    .topic {
+      height: 5rem;
+      padding-top: 5rem;
+      padding-left: 5rem;
+      h1 {
+        font-size: 60px;
+        height: auto;
+        line-height: normal;
+        color: #c4b4a5;
+        font-weight: 700;
+        font-family: "Cormorant Infant", Georgia, "Times New Roman", serif;
+      }
     }
-  }
-  .subtitle {
-    padding-top: 10rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: start;
-    flex-wrap: nowrap;
+    .subtitle {
+      padding-top: 10rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: start;
+      margin-left: 5rem;
+      flex-wrap: nowrap;
 
-    h1 {
-      margin-top: 5rem;
-      margin-left: 10rem;
-      font-weight: 800;
-      font-size: 50px;
-      color: #c4b4a5;
+      h1 {
+        width: 15rem;
+        margin-top: 2rem;
+        font-weight: 800;
+        font-size: 40px;
+        color: #c4b4a5;
+      }
+      #wineCabinet {
+        // position: absolute;
+        // right: 0%;
+        // top: 50%;
+        width: 500px;
+      }
     }
-    #wineCabinet {
-      // position: absolute;
-      // right: 10%;
-      // top: 40%;
-      max-width: 600px;
+  }
+  @media (min-width: 1200px) {
+    .topic {
+      height: 5rem;
+      padding-top: 3rem;
+      padding-left: 12rem;
+      h1 {
+        height: auto;
+        line-height: normal;
+        color: #c4b4a5;
+        font-weight: 700;
+        font-family: "Cormorant Infant", Georgia, "Times New Roman", serif;
+        font-size: 80px;
+      }
+    }
+    .subtitle {
+      padding-top: 10rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: start;
+      flex-wrap: nowrap;
+
+      h1 {
+        margin-top: 5rem;
+        margin-left: 10rem;
+        font-weight: 800;
+        font-size: 50px;
+        color: #c4b4a5;
+      }
+      #wineCabinet {
+        // position: absolute;
+        // right: 10%;
+        // top: 40%;
+        max-width: 600px;
+      }
     }
   }
 }
+
 //banner-part-end
 //classification-part-start
 #classification {
   position: relative;
-  background: url("../assets/classification-part.png");
+  background: url("../assets/background/classification-part.png");
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
@@ -287,5 +310,33 @@ export default {
     }
   }
 }
+#storyMap {
+  position: relative;
+  background: url("../assets/background/storyMap-part.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+}
+#carousel {
+  position: relative;
+  background: url("../assets/background/carousel-part.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 100vh;
+  .v-img__img,
+  .v-img__picture,
+  .v-img__gradient,
+  .v-img__placeholder,
+  .v-img__error {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50;
+    /* width: 100%; */
+    height: 100%;
+  }
+}
+
 //classification-part-end
 </style>

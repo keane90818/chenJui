@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   ssr:true,
-  css: ['~/assets/css/main.css',"vuetify/lib/styles/main.sass", "@mdi/font/css/materialdesignicons.min.css"],
+  css: ['~/assets/css/main.css',"vuetify/lib/styles/main.sass", "@mdi/font/css/materialdesignicons.min.css","animate.css/animate.min.css"],
   typescript: {
     typeCheck: true
   },

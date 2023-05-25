@@ -7,18 +7,24 @@
       </div>
       <div class="subtitle">
         <h1>陳酒家釀</h1>
-        <img id="wineCabinet" src="../assets/wineCabinet.png" alt="陳酒家釀" />
+        <img
+          id="wineCabinet"
+          class="animate__animated animate__fadeInUp"
+          src="../assets/wineCabinet.png"
+          alt="陳酒家釀"
+        />
       </div>
     </div>
     <div id="classification">
       <div class="flex justify-center">
         <!-- <h1 class="text-7xl py-12">主題介紹</h1> -->
       </div>
-      <div class="flex justify-around">
+      <div class="flex flex-wrap justify-around">
         <div class="beerDiv max-h-72">
           <img
             id="historyBeer"
-            class="relative right-1 max-w-xs max-h-80"
+            ref="historyBeerRef"
+            class="relative right-1 max-w-xs max-h-80 beer"
             src="../assets/historyBeer.png"
             alt=""
           />
@@ -26,7 +32,8 @@
         <div class="beerDiv max-h-72">
           <img
             id="skillBeer"
-            class="relative right-1 max-w-xs max-h-80"
+            ref="skillBeerRef"
+            class="relative right-1 max-w-xs max-h-80 beer"
             src="../assets/skillBeer.png"
             alt=""
           />
@@ -34,7 +41,8 @@
         <div class="beerDiv max-h-72">
           <img
             id="foodBeer"
-            class="relative right-1 max-w-xs max-h-80"
+            ref="foodBeerRef"
+            class="relative right-1 max-w-xs max-h-80 beer"
             src="../assets/foodBeer.png"
             alt=""
           />
@@ -42,10 +50,79 @@
       </div>
     </div>
   </div>
-  <div>123</div>
+  <div :style="{ backgroundColor: state.elementColor }">
+    <!-- 其他组件内容 -->
+    {{ state.elementColor }}
+  </div>
 </template>
 
-<script setup></script>
+<script>
+import { reactive, onMounted, onBeforeUnmount, watch } from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+export default {
+  setup() {
+    const state = reactive({
+      elementColor: "" // 初始化元素颜色
+    });
+    const handleWindowResize = () => {
+      const windowWidth = window.innerWidth;
+      console.log("windowWidth=" + windowWidth);
+      if (windowWidth >= 1200) {
+        state.elementColor = "red";
+      } else if (windowWidth >= 768) {
+        state.elementColor = "green";
+      } else {
+        state.elementColor = "blue";
+      }
+    };
+    // 以上為抓取螢幕寬度
+    const triggers = ScrollTrigger.getAll();
+    // 以上為抓取scroll
+    onMounted(() => {
+      handleWindowResize(); // 初始化处理
+      // 监听窗口大小变化
+      window.addEventListener("resize", handleWindowResize);
+
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.utils.toArray(".beer").forEach((label) => {
+        gsap.fromTo(
+          label,
+          {
+            x: "-150%" // 设置元素的初始位置在右侧
+          },
+          {
+            x: "0%", // 设置元素的最终位置在原始位置
+            duration: 1, // 动画持续时间
+            scrollTrigger: {
+              trigger: label,
+              start: "center bottom", // 设置触发动画的位置
+              toggleActions: "play none none none",
+              markers: false // 调试标记，可选
+            }
+          }
+        );
+      });
+    });
+    onBeforeUnmount(() => {
+      // 在组件销毁前移除事件监听
+      window.removeEventListener("resize", handleWindowResize);
+    });
+
+    // 监听state.elementColor变化
+    watch(
+      () => state.elementColor,
+      (newValue, oldValue) => {
+        // 处理state.elementColor的变化
+      }
+    );
+
+    return {
+      state
+    };
+  }
+};
+</script>
 
 <style lang="scss">
 .body {
@@ -53,14 +130,15 @@
   background-color: rgba(196, 187, 184, 0.45);
 }
 //banner-part-start
-#banner {
-  background: url("../assets/bannerImg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-}
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
+  #banner {
+    background: url("../assets/bannerImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // height: 100vh;
+  }
   .topic {
     height: 5rem;
     padding-top: 5rem;
@@ -94,7 +172,14 @@
     }
   }
 }
-@media (max-width: 800px) and (min-width: 480px) {
+@media (max-width: 1200px) and (min-width: 768px) {
+  #banner {
+    background: url("../assets/bannerImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //height: 80vh;
+  }
   .topic {
     height: 5rem;
     padding-top: 5rem;
@@ -117,9 +202,10 @@
     flex-wrap: nowrap;
 
     h1 {
+      width: 15rem;
       margin-top: 2rem;
       font-weight: 800;
-      font-size: 30px;
+      font-size: 40px;
       color: #c4b4a5;
     }
     #wineCabinet {
@@ -130,7 +216,14 @@
     }
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
+  #banner {
+    background: url("../assets/bannerImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // height: 100vh;
+  }
   .topic {
     height: 5rem;
     padding-top: 3rem;
@@ -172,12 +265,11 @@
   position: relative;
   background: url("../assets/classification-part.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center center;
-  height: 50vh;
   .beerDiv {
     // background: orange;
-    border-radius: 300px 300px 200px 200px;
+    // border-radius: 300px 300px 200px 200px;
     #historyBeer {
       &:hover {
         content: url("../assets/historyBeer-open.png");

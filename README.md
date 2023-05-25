@@ -6,7 +6,8 @@
 ## Setup
 
 Make sure to install the dependencies:
-
+# tailwind
+# 
 ```bash
 # yarn
 yarn install

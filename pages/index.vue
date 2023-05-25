@@ -13,7 +13,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script setup>
+definePageMeta({});
+</script>
 
 <style lang="scss">
 .body {
@@ -58,6 +60,7 @@
       margin-top: 5rem;
 
       width: 400px;
+      overflow: hidden;
     }
   }
 }

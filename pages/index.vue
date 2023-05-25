@@ -10,16 +10,47 @@
         <img id="wineCabinet" src="../assets/wineCabinet.png" alt="陳酒家釀" />
       </div>
     </div>
+    <div id="classification">
+      <div class="flex justify-center">
+        <!-- <h1 class="text-7xl py-12">主題介紹</h1> -->
+      </div>
+      <div class="flex justify-around">
+        <div class="beerDiv max-h-72">
+          <img
+            id="historyBeer"
+            class="relative right-1 max-w-xs max-h-80"
+            src="../assets/historyBeer.png"
+            alt=""
+          />
+        </div>
+        <div class="beerDiv max-h-72">
+          <img
+            id="skillBeer"
+            class="relative right-1 max-w-xs max-h-80"
+            src="../assets/skillBeer.png"
+            alt=""
+          />
+        </div>
+        <div class="beerDiv max-h-72">
+          <img
+            id="foodBeer"
+            class="relative right-1 max-w-xs max-h-80"
+            src="../assets/foodBeer.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </div>
+  <div>123</div>
 </template>
 
-<script setup>
-definePageMeta({});
-</script>
+<script setup></script>
 
 <style lang="scss">
 .body {
   margin-top: 0rem;
+  background-color: rgba(196, 187, 184, 0.45);
 }
 //banner-part-start
 #banner {
@@ -29,7 +60,6 @@ definePageMeta({});
   background-position: center center;
   height: 100vh;
 }
-
 @media (max-width: 480px) {
   .topic {
     height: 5rem;
@@ -136,6 +166,34 @@ definePageMeta({});
     }
   }
 }
-
 //banner-part-end
+//classification-part-start
+#classification {
+  position: relative;
+  background: url("../assets/classification-part.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50vh;
+  .beerDiv {
+    // background: orange;
+    border-radius: 300px 300px 200px 200px;
+    #historyBeer {
+      &:hover {
+        content: url("../assets/historyBeer-open.png");
+      }
+    }
+    #skillBeer {
+      &:hover {
+        content: url("../assets/skillBeer-open.png");
+      }
+    }
+    #foodBeer {
+      &:hover {
+        content: url("../assets/foodBeer-open.png");
+      }
+    }
+  }
+}
+//classification-part-end
 </style>

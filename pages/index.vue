@@ -89,13 +89,37 @@ export default {
         src: "https://hackmd.io/_uploads/B187wj2H3.jpg"
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+        src: "https://hackmd.io/_uploads/SJyo1taHn.jpg"
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+        src: "https://hackmd.io/_uploads/SkMskYTS2.jpg"
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+        src: "https://hackmd.io/_uploads/r1NokK6S2.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/HyLoJtpHn.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/BJuo1FpH2.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/Sk5sJFpBh.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/r1NokK6S2.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/r1NokK6S2.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/S13s1tpB2.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/HJRoJtpHh.jpg"
+      },
+      {
+        src: "https://hackmd.io/_uploads/Bkxh1F6Hh.jpg"
       }
     ]);
     const state = reactive({
@@ -323,7 +347,7 @@ export default {
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
-  height: 100vh;
+  // height: 100vh;
   .v-img__img,
   .v-img__picture,
   .v-img__gradient,

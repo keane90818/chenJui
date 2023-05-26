@@ -1,5 +1,28 @@
 <template>
   <div class="body">
+    <v-row justify="center">
+      <v-dialog v-model="dialog" persistent fullscreen>
+        <v-card id="introduce" class="flex justify-center">
+          <v-text class="flex justify-center">
+            <img class="max-w-sm" src="../assets/logo.png" alt="陳酒家釀" />
+          </v-text>
+          <v-text class="flex justify-center">
+            <img class="max-w-sm" src="../assets/introtuce.png" alt="陳酒家釀" />
+          </v-text>
+          <v-card-actions class="flex justify-center">
+            <v-btn
+              color="brown-darken-1 "
+              size="x-large"
+              variant="outlined"
+              elevation="4"
+              @click="dialog = false"
+            >
+              一飲而盡
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </v-row>
     <div id="banner">
       <div class="topic">
         <h1>CHEN JIA</h1>
@@ -121,10 +144,11 @@ export default {
       {
         src: "https://hackmd.io/_uploads/Bkxh1F6Hh.jpg"
       }
-    ]);
+    ]); // corousel圖片
     const state = reactive({
       elementColor: "" // 初始化元素颜色
     });
+    const dialog = ref(false); // dialog的開關
     const handleWindowResize = () => {
       const windowWidth = window.innerWidth;
       console.log("windowWidth=" + windowWidth);
@@ -143,7 +167,7 @@ export default {
       handleWindowResize(); // 初始化处理
       // 监听窗口大小变化
       window.addEventListener("resize", handleWindowResize);
-
+      dialog.value = true; // 頁面載入後打開dialog
       gsap.registerPlugin(ScrollTrigger);
       gsap.utils.toArray(".beer").forEach((label) => {
         gsap.fromTo(
@@ -179,7 +203,8 @@ export default {
 
     return {
       state,
-      items
+      items,
+      dialog
     };
   }
 };
@@ -361,6 +386,17 @@ export default {
     height: 100%;
   }
 }
-
+#introduce {
+  background: url("../assets/background/introduce-part.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .v-btn {
+    font-weight: 800;
+  }
+  .v-btn--variant-outlined {
+    border: 2px solid currentColor;
+  }
+}
 //classification-part-end
 </style>

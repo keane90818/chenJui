@@ -1,8 +1,3 @@
-# Park Alert
-臨停，不必在留電話
-
-你可以在臨停時留下QRCODE，別人就可以順利聯絡你
-
 ## Setup
 
 Make sure to install the dependencies:

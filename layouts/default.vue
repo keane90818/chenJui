@@ -179,7 +179,7 @@ export default {
         padding: 10px 30px;
         font-size: 15px;
         font-weight: 700;
-        line-height: 60px;
+        line-height: 40px;
       }
     }
     li::after {

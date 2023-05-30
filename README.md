@@ -1,7 +1,7 @@
 ## Setup
 
 Make sure to install the dependencies:
-# tailwind
+# tailwind https://flowbite.com/tools/tailwind-cheat-sheet/
 # https://icones.js.org/ Icon來這邊找
 ```bash
 # yarn

@@ -3,9 +3,9 @@
     <div class="container">
       <img src="../assets/logo.png" alt="陳酒家釀" style="height: 70px" class="ml-10 mb-2" />
 
-      <button class="hamburger mt-5 mr-5">
+      <button class="hamburger tw-mt-5 tw-mr-5">
         <v-icon size="30" icon="mdi mdi-menu" @click.stop="drawer = !drawer"></v-icon>
-        <v-layout class="mt-5">
+        <v-layout class="tw-mt-5">
           <v-navigation-drawer v-model="drawer" location="right" temporary>
             <v-list v-model:opened="open">
               <v-list-item prepend-icon="mdi-home" title="Home"></v-list-item>
@@ -107,6 +107,11 @@
   </div>
 
   <slot />
+  <footer class="tw-bg-myColor tw-px-10 tw-py-6 tw-text-white">
+    <!-- 其他组件内容 -->
+    © Copyright 2022 POUND達. All Rights Reserved.
+    <!-- {{ state.elementColor }} -->
+  </footer>
 </template>
 <script>
 export default {

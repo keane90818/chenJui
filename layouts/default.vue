@@ -107,6 +107,7 @@
   </div>
 
   <slot />
+  <div class="main-footer">123456</div>
 </template>
 <script>
 export default {
@@ -135,15 +136,30 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
 
-a {
-  display: block;
-  text-decoration: none;
-  color: black;
-}
-
 .main-header {
+  @media (max-width: 1000px) {
+    .nav-content {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  @media (min-width: 1000px) {
+    .nav-content {
+      display: block;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
   width: 100%;
   background-color: white;
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
   .container {
     width: 100%;
     margin: auto;
@@ -180,47 +196,32 @@ a {
       right: 0;
     }
   }
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    border-radius: 10px;
-    z-index: 1;
-    li {
-      a {
-        padding: 0px 30px;
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      border-radius: 10px;
+      z-index: 1;
+      li {
+        a {
+          padding: 0px 30px;
+        }
+      }
+    }
+    &:hover {
+      .dropdown-content {
+        display: block;
       }
     }
   }
-  &:hover {
-    .dropdown-content {
-      display: block;
-    }
-  }
 }
 
-@media (max-width: 1000px) {
-  .nav-content {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-}
-@media (min-width: 1000px) {
-  .nav-content {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
+.main-footer {
 }
 </style>

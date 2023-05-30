@@ -94,10 +94,9 @@
       ></v-carousel-item>
     </v-carousel>
   </div>
-  <div :style="{ backgroundColor: state.elementColor }">
-    <!-- 其他组件内容 -->
+  <!-- <div :style="{ backgroundColor: state.elementColor }">
     {{ state.elementColor }}
-  </div>
+  </div> -->
 </template>
 
 <script>

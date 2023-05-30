@@ -107,7 +107,6 @@
   </div>
 
   <slot />
-  <div class="main-footer">123456</div>
 </template>
 <script>
 export default {

@@ -94,17 +94,16 @@
       ></v-carousel-item>
     </v-carousel>
   </div>
-  <<<<<<< HEAD
+
   <!-- <div :style="{ backgroundColor: state.elementColor }">
     {{ state.elementColor }}
   </div> -->
-  =======
+
   <footer class="tw-bg-myColor tw-px-10 tw-py-6 tw-text-white">
     <!-- 其他组件内容 -->
     © Copyright 2022 POUND達. All Rights Reserved.
     <!-- {{ state.elementColor }} -->
   </footer>
-  >>>>>>> f47d3fbe69557643bbe4d62a11822ae713d46151
 </template>
 
 <script>

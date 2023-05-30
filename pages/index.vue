@@ -94,14 +94,14 @@
       ></v-carousel-item>
     </v-carousel>
   </div>
-  <div :style="{ backgroundColor: state.elementColor }">
+  <footer class="tw-bg-myColor tw-px-10 tw-py-6 tw-text-white">
     <!-- 其他组件内容 -->
-    {{ state.elementColor }}
-  </div>
+    © Copyright 2022 POUND達. All Rights Reserved.
+    <!-- {{ state.elementColor }} -->
+  </footer>
 </template>
 
 <script>
-import { reactive, onMounted, onBeforeUnmount, watch } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {

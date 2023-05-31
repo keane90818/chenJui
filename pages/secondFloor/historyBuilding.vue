@@ -14,6 +14,19 @@
         <img src="../../assets/maps/historyBuilding-map.jpg" alt="南投歷史建築" />
       </div>
     </div>
+    <div class="container tw-flex tw-justify-center">
+      <div class="m-card tw-flex tw-justify-center">
+        <div class="photo">
+          <img
+            src="https://www.chenjiou.com/wp-content/uploads/2023/03/5D623C79-6F9D-48F4-9264-4F7A2E53F08A.png"
+          />
+        </div>
+        <h1 class="m-card-title">登瀛書院</h1>
+        <!-- <h2 class="m-card-secTitle">拜拜好所在</h2>
+        <span class="m-card-text"> <span>考試前才會去的地方</span> </span>
+        <a class="m-card-a" href="dengying_academy1.html">了解更多</a> -->
+      </div>
+    </div>
   </div>
 </template>
 <style lang="scss">
@@ -27,5 +40,51 @@
 .desciption-part {
   background-color: bisque;
   border-radius: 0px 260px 260px 0px;
+}
+
+.m-card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  background-color: #7591ad;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #2c2c2c;
+  color: #e8f6fd;
+}
+
+.photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  border-radius: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.m-card:hover .photo::before {
+  display: none;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.m-card:hover .photo {
+  width: 120px;
+  height: 120px;
+  top: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #111;
 }
 </style>

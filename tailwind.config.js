@@ -11,7 +11,8 @@ export const content = [
 ];
 export const theme = {
   colors: {
-    myColor: "#857a70"
+    myColor: "#857a70",
+    titleGreen: " #94ad54"
   },
   extend: {}
 };

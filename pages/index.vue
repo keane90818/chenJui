@@ -2,14 +2,14 @@
   <div class="body">
     <v-row justify="center">
       <v-dialog v-model="dialog" persistent fullscreen>
-        <v-card id="introduce" class="flex justify-center">
-          <v-text class="flex justify-center">
-            <img class="max-w-sm" src="../assets/logo.png" alt="陳酒家釀" />
+        <v-card id="introduce" class="tw-flex tw-justify-center">
+          <v-text class="tw-flex tw-justify-center">
+            <img class="tw-max-w-sm" src="../assets/logo.png" alt="陳酒家釀" />
           </v-text>
-          <v-text class="flex justify-center">
-            <img class="max-w-sm" src="../assets/introtuce.png" alt="陳酒家釀" />
+          <v-text class="tw-flex tw-justify-center">
+            <img class="tw-max-w-sm" src="../assets/introtuce.png" alt="陳酒家釀" />
           </v-text>
-          <v-card-actions class="flex justify-center">
+          <v-card-actions class="tw-flex tw-justify-center">
             <v-btn
               color="brown-darken-1 "
               size="x-large"
@@ -39,33 +39,33 @@
       </div>
     </div>
     <div id="classification">
-      <div class="flex justify-center">
+      <div class="tw-flex tw-justify-center">
         <!-- <h1 class="text-7xl py-12">主題介紹</h1> -->
       </div>
-      <div class="flex flex-wrap justify-around">
-        <div class="beerDiv max-h-72">
+      <div class="tw-flex tw-flex-wrap tw-justify-around">
+        <div class="beerDiv tw-max-h-72">
           <img
             id="historyBeer"
             ref="historyBeerRef"
-            class="relative right-1 max-w-xs max-h-80 beer"
+            class="tw-relative tw-right-1 tw-max-w-xs tw-max-h-80 beer"
             src="../assets/historyBeer.png"
             alt=""
           />
         </div>
-        <div class="beerDiv max-h-72">
+        <div class="beerDiv tw-max-h-72">
           <img
             id="skillBeer"
             ref="skillBeerRef"
-            class="relative right-1 max-w-xs max-h-80 beer"
+            class="tw-relative tw-right-1 tw-max-w-xs tw-max-h-80 beer"
             src="../assets/skillBeer.png"
             alt=""
           />
         </div>
-        <div class="beerDiv max-h-72">
+        <div class="beerDiv tw-max-h-72">
           <img
             id="foodBeer"
             ref="foodBeerRef"
-            class="relative right-1 max-w-xs max-h-80 beer"
+            class="tw-relative tw-right-1 tw-max-w-xs tw-max-h-80 beer"
             src="../assets/foodBeer.png"
             alt=""
           />
@@ -73,7 +73,7 @@
       </div>
     </div>
     <div id="storyMap">
-      <div class="flex p-20">
+      <div class="tw-flex tw-p-20">
         <iframe
           class="map"
           src="https://uploads.knightlab.com/storymapjs/25135f6713fc12c0ea89d828ab9e34d6/abc/draft.html"
@@ -87,7 +87,7 @@
   <div id="carousel">
     <v-carousel hide-delimiters>
       <v-carousel-item
-        class="max-w-lg justify-center"
+        class="tw-max-w-lg tw-justify-center"
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"

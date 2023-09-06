@@ -107,6 +107,9 @@
   </div>
 
   <slot />
+  <footer class="tw-bg-myColor tw-px-10 tw-py-6 tw-text-white">
+    &copy; Copyright 2022 POUND達. All Rights Reserved.
+  </footer>
 </template>
 <script>
 export default {

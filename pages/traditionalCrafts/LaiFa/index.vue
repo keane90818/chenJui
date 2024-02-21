@@ -1,7 +1,9 @@
 <template>
   <main class="tw-flex tw-items-center tw-justify-center tw-flex-col tw-p-0">
     <div class="tw-w-full tw-px-96 tw-pt-10">
-      <h1 class="tw-text-[#681535] tw-text-7xl tw-w-full tw-mb-8">來發鐵店</h1>
+      <div class="tw-flex tw-flex-row">
+        <h1 class="tw-text-[#681535] tw-text-7xl tw-mb-8">來發鐵店</h1>
+      </div>
       <div class="tw-flex tw-gap-20">
         <div class="tw-w-72">
           <h4 class="tw-font-bold tw-text-[#7f6c8f]">竹山打鐵巷沒落</h4>

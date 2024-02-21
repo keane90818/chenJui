@@ -65,7 +65,7 @@
 
       <nav class="nav-content">
         <ul class="main-menu">
-          <li><a href="#">首頁</a></li>
+          <li><a href="/">首頁</a></li>
           <li class="dropdown">
             <a href="#">歷史建築</a>
             <ul class="dropdown-content">
@@ -78,13 +78,13 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">傳統技藝</a>
+            <a href="/traditionalCrafts">傳統技藝</a>
             <ul class="dropdown-content">
               <li>
-                <a href="#">來發鐵店</a>
+                <a href="/traditionalCrafts/LaiFa">來發鐵店</a>
               </li>
               <li>
-                <a href="#">冠德竹木精品社</a>
+                <a href="/traditionalCrafts/GuanDe">冠德竹木精品社</a>
               </li>
             </ul>
           </li>

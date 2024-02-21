@@ -15,7 +15,7 @@
         <div class="area-info-container tw-w-[220px] tw-px-9 tw-py-5">
           <div class="title tw-text-lg tw-font-semibold tw-text-[#000763]">來發鐵店</div>
           <div class="desc tw-h-[280px] tw-break-all tw-text-sm tw-my-6 tw-leading-loose tw-text-[#4F5168]">當地第一間從清朝末年開始發跡的百年鐵舖「來發鐵店」，至今仍不改迷人的打鐵風景，堅持手工打造的鑄鐵技術遠近馳名，在現代更顯得特殊而珍貴，也讓人喜愛上手工鐵具獨有的溫度。</div>
-          <NuxtLink to="/traditionalCrafts" class="navigate tw-text-sm tw-font-semibold tw-text-[#FF6734]">Read More &rarr;</NuxtLink>
+          <NuxtLink to="/traditionalCrafts/LaiFa" class="navigate tw-text-sm tw-font-semibold tw-text-[#FF6734]">Read More &rarr;</NuxtLink>
         </div>
       </div>
       <div class="GuanDe-area tw-flex sm:tw-flex-col md:tw-flex-row">
@@ -23,7 +23,7 @@
         <div class="area-info-container tw-w-[220px] tw-px-9 tw-py-5">
             <div class="title tw-text-lg tw-font-semibold tw-text-[#000763]">冠德竹木精品社</div>
             <div class="desc tw-h-[280px] tw-break-all tw-text-sm tw-my-6 tw-leading-loose tw-text-[#4F5168]">劉興澤自幼家境清寒，從國中畢業就因父親於竹木加工廠工作，開始接觸傳統竹工藝，在一次機緣下，開始跟著國寶級竹編大師黃塗山學習竹藝，成功成為黃塗山的嫡傳三大弟子之一，更獲得台灣工藝之家的評選認證。</div>
-            <NuxtLink to="/traditionalCrafts" class="navigate tw-text-sm tw-font-semibold tw-text-[#FF6734]">Read More &rarr;</NuxtLink>
+            <NuxtLink to="/traditionalCrafts/GuanDe" class="navigate tw-text-sm tw-font-semibold tw-text-[#FF6734]">Read More &rarr;</NuxtLink>
           </div>
       </div>
     </v-card>

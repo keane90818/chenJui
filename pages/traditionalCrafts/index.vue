@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="GuanDe-area tw-flex sm:tw-flex-col md:tw-flex-row">
-        <img src="../../assets/imgs/GuanDeImg.png" alt="LaiFa" height="320" width="220" class="traditional-crafts-img tw-mr-4">
+        <img src="../../assets/imgs/GuanDeImg.png" alt="GuanDe" height="320" width="220" class="traditional-crafts-img tw-mr-4">
         <div class="area-info-container tw-w-[220px] tw-px-9 tw-py-5">
             <div class="title tw-text-lg tw-font-semibold tw-text-[#000763]">冠德竹木精品社</div>
             <div class="desc tw-h-[280px] tw-break-all tw-text-sm tw-my-6 tw-leading-loose tw-text-[#4F5168]">劉興澤自幼家境清寒，從國中畢業就因父親於竹木加工廠工作，開始接觸傳統竹工藝，在一次機緣下，開始跟著國寶級竹編大師黃塗山學習竹藝，成功成為黃塗山的嫡傳三大弟子之一，更獲得台灣工藝之家的評選認證。</div>

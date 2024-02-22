@@ -89,10 +89,10 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">美食老店</a>
+            <a href="/gourmetFood">美食老店</a>
             <ul class="dropdown-content">
               <li>
-                <a href="#">黑狗兄傳統手工餅舖</a>
+                <a href="/gourmetFood/HeiGou">黑狗兄傳統手工餅舖</a>
               </li>
               <li>
                 <a href="#">源振發製麵廠</a>

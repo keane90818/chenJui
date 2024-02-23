@@ -2,7 +2,7 @@
   <main class="tw-flex tw-items-center tw-justify-center tw-flex-col tw-p-0">
     <div class="tw-w-full tw-px-96 tw-pt-10">
       <div class="tw-flex tw-flex-row">
-        <h1 class="tw-text-[#E6C26B] tw-text-7xl tw-mb-8">黑狗兄傳統餅舖</h1>
+        <h1 class="tw-text-[#E6C26B] tw-text-7xl tw-font-extrabold tw-mb-8">黑狗兄傳統餅舖</h1>
       </div>
       <div class="tw-flex tw-gap-20 tw-pb-10">
         <div class="tw-w-72">

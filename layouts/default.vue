@@ -8,7 +8,7 @@
         <v-layout class="mt-5">
           <v-navigation-drawer v-model="drawer" location="right" temporary>
             <v-list v-model:opened="open">
-              <v-list-item prepend-icon="mdi-home" title="Home"></v-list-item>
+              <v-list-item prepend-icon="mdi-home" title="Home" href="/"></v-list-item>
 
               <v-list-group value="historyBuild">
                 <template v-slot:activator="{ props }">
@@ -19,11 +19,12 @@
                   ></v-list-item>
                 </template>
                 <v-list-item
-                  v-for="([title, icon], i) in historyBuild"
+                  v-for="([title, icon, route], i) in historyBuild"
                   :key="i"
                   :value="title"
                   :title="title"
                   :prepend-icon="icon"
+                  :href="`/historicBuildings/${route}`"
                 ></v-list-item>
               </v-list-group>
               <v-list-group value="skills">
@@ -35,11 +36,12 @@
                   ></v-list-item>
                 </template>
                 <v-list-item
-                  v-for="([title, icon], i) in skills"
+                  v-for="([title, icon, route], i) in skills"
                   :key="i"
                   :value="title"
                   :title="title"
                   :prepend-icon="icon"
+                  :href="`/traditionalCrafts/${route}`"
                 ></v-list-item>
               </v-list-group>
               <v-list-group value="foodStore">
@@ -51,11 +53,13 @@
                   ></v-list-item>
                 </template>
                 <v-list-item
-                  v-for="([title, icon], i) in foodStore"
+                  v-for="([title, icon, route], i) in foodStore"
                   :key="i"
                   :value="title"
                   :title="title"
                   :prepend-icon="icon"
+                  :href="`/gourmetFood/${route}`"
+
                 ></v-list-item>
               </v-list-group>
             </v-list>
@@ -95,12 +99,12 @@
                 <a href="/gourmetFood/HeiGou">黑狗兄傳統手工餅舖</a>
               </li>
               <li>
-                <a href="/gourmetFood/YuanZhenFa">源振發製麵廠</a>
+                <a href="/gourmetFood/YuanJhenFa">源振發製麵廠</a>
               </li>
             </ul>
           </li>
-          <li><a href="#">團隊介紹</a></li>
-          <li><a href="#">友站連結</a></li>
+          <li><a href="/about">團隊介紹</a></li>
+          <li><a href="/friendSites">友站連結</a></li>
         </ul>
       </nav>
     </div>
@@ -119,17 +123,46 @@ export default {
       group: null,
       open: ["Users"],
       historyBuild: [
-        ["南投戲院", "mdi mdi-theater"],
-        ["登瀛書院", "mdi mdi-bookshelf"]
+        ["南投戲院", "mdi mdi-theater", "NanTouTheater"],
+        ["登瀛書院", "mdi mdi-bookshelf", "DengYing"]
       ],
       skills: [
-        ["來發鐵店", "mdi mdi-iron-board"],
-        ["冠德竹木精品社", "mdi mdi-pine-tree-variant-outline"]
+        ["來發鐵店", "mdi mdi-iron-board", "LaiFa"],
+        ["冠德竹木精品社", "mdi mdi-pine-tree-variant-outline", "GuanDe"]
       ],
       foodStore: [
-        ["源振發製麵廠", "mdi mdi-noodles"],
-        ["黑狗兄傳統手工餅舖", "mdi mdi-food-hot-dog"]
-      ]
+        ["源振發製麵廠", "mdi mdi-noodles", "YuanJhenFa"],
+        ["黑狗兄傳統手工餅舖", "mdi mdi-food-hot-dog",  "HeiGou"]
+      ],
+      items: [
+        { type: "subheader", title: "Group #1" },
+        {
+          title: "Item #1",
+          value: 1,
+        },
+        {
+          title: "Item #2",
+          value: 2,
+        },
+        {
+          title: "Item #3",
+          value: 3,
+        },
+        { type: "divider" },
+        { type: "subheader", title: "Group #2" },
+        {
+          title: "Item #4",
+          value: 4,
+        },
+        {
+          title: "Item #5",
+          value: 5,
+        },
+        {
+          title: "Item #6",
+          value: 6,
+        },
+      ],
     };
   },
   methods: {}

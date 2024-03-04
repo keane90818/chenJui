@@ -18,7 +18,7 @@
           </p>
         </div>
         <div class="tw-h-full tw-w-[750px]">
-          <img src="../../../assets/gourmetFood/YuanZhenFa/1.jpg"  alt=""/>
+          <img src="../../../assets/gourmetFood/YuanJhenFa/1.jpg"  alt=""/>
           <p class="tw-text-start tw-text-gray-500 tw-pt-2">古早砝碼秤陪伴許家走過百年歲月。攝/蔡沛凌</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
           </p>
         </div>
         <div class="tw-h-full tw-w-[800px]">
-          <img src="../../../assets/gourmetFood/YuanZhenFa/3.jpg" class="" alt=""/>
+          <img src="../../../assets/gourmetFood/YuanJhenFa/3.jpg" class="" alt=""/>
           <p class="tw-text-[14px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-3">堅持傳統製作，只為保留百年好味道。攝/蔡沛凌</p>
         </div>
       </div>
@@ -71,8 +71,8 @@
   </main>
 </template>
 <script setup>
-import carousel1 from "../../../assets/gourmetFood/YuanZhenFa/2_1.jpg";
-import carousel2 from "../../../assets/gourmetFood/YuanZhenFa/2_2.jpg";
-import carousel3 from "../../../assets/gourmetFood/YuanZhenFa/2_3.jpg";
+import carousel1 from "../../../assets/gourmetFood/YuanJhenFa/2_1.jpg";
+import carousel2 from "../../../assets/gourmetFood/YuanJhenFa/2_2.jpg";
+import carousel3 from "../../../assets/gourmetFood/YuanJhenFa/2_3.jpg";
 </script>
 <style scoped></style>

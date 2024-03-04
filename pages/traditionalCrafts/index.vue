@@ -1,16 +1,16 @@
 <template>
   <main id="container" class="tw-flex tw-items-center tw-justify-center tw-flex-col tw-p-0">
-    <div class="intro-container tw-flex tw-my-16  md:tw-flex-col lg:tw-flex-row sm:tw-flex-col">
-      <div class="left-container tw-pt-[20px] sm:tw-mb-6 md:tw-mb-6 lg:tw-mb-0">
-        <div class="tw-text-7xl tw-font-semibold tw-mr-48 tw-text-[#c47f42]">傳統技藝</div>
-        <div class="tw-w-96 tw-text-[18px] tw-font-semibold tw-text-[#6b0020] tw-ml-6 tw-mt-24 tw-leading-[1.5em]">說到竹山第一個想到的肯定是竹子，那就不能不說到擁有百年歷史的來發鐵店，從製作傳統砍竹農具發跡到現在的客製化製刀，老師傅純手工鍛造所形成的迷人紋路，等著你來一探究竟。還有還有，不能不認識的竹山在地竹編大師劉興澤，絕妙的編織手法、富有故事性的作品以及時尚感滿滿的竹編包包，都值得讓你細心品味。</div>
+    <div class="intro-container tw-flex tw-my-16 max-lg:tw-flex-col lg:tw-flex-row lg:tw-gap-20">
+      <div class="left-container tw-pt-[20px] max-lg:tw-my-10 max-lg:tw-mx-2">
+        <div class="tw-text-7xl tw-font-semibold md:tw-mr-5 tw-text-[#c47f42]">傳統技藝</div>
+        <div class="tw-w-96 tw-text-[18px] tw-font-semibold tw-text-[#6b0020] lg:tw-ml-6 lg:tw-mt-24 max-lg:tw-mt-5 max-lg:tw-ml-2 tw-leading-[1.5em]">說到竹山第一個想到的肯定是竹子，那就不能不說到擁有百年歷史的來發鐵店，從製作傳統砍竹農具發跡到現在的客製化製刀，老師傅純手工鍛造所形成的迷人紋路，等著你來一探究竟。還有還有，不能不認識的竹山在地竹編大師劉興澤，絕妙的編織手法、富有故事性的作品以及時尚感滿滿的竹編包包，都值得讓你細心品味。</div>
       </div>
       <div class="right-container">
         <img src="../../assets/map/traditional-crafts-map.jpg" alt="traditional-crafts-map" height="436" width="624">
       </div>
     </div>
-    <v-card class="detail-container tw-mb-10 sm:tw-flex-col md:tw-flex-col lg:tw-flex-row">
-      <div class="LaiFa-area tw-flex sm:tw-flex-col md:tw-flex-row">
+    <v-card class="detail-container tw-mb-10 sm:tw-flex-col max-lg:tw-flex-col lg:tw-flex-row">
+      <div class="LaiFa-area tw-flex max-md:tw-flex-col md:tw-flex-row lg:tw-flex-row">
         <img src="../../assets/imgs/LaiFaImg.png" alt="LaiFa" height="320" width="220" class="traditional-crafts-img tw-mr-4">
         <div class="area-info-container tw-w-[220px] tw-px-9 tw-py-5">
           <div class="title tw-text-lg tw-font-semibold tw-text-[#000763]">來發鐵店</div>
@@ -18,7 +18,7 @@
           <NuxtLink to="/traditionalCrafts/LaiFa" class="navigate tw-text-sm tw-font-semibold tw-text-[#FF6734]">Read More &rarr;</NuxtLink>
         </div>
       </div>
-      <div class="GuanDe-area tw-flex sm:tw-flex-col md:tw-flex-row">
+      <div class="GuanDe-area tw-flex max-md:tw-flex-col md:tw-flex-row lg:tw-flex-row">
         <img src="../../assets/imgs/GuanDeImg.png" alt="GuanDe" height="320" width="220" class="traditional-crafts-img tw-mr-4">
         <div class="area-info-container tw-w-[220px] tw-px-9 tw-py-5">
             <div class="title tw-text-lg tw-font-semibold tw-text-[#000763]">冠德竹木精品社</div>

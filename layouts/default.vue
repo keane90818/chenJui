@@ -3,7 +3,7 @@
     <div class="container">
       <img src="../assets/logo.png" alt="陳酒家釀" style="height: 70px" class="ml-10 mb-2" />
 
-      <button class="hamburger mt-5 mr-5">
+      <button class="hamburger mt-5 mr-5 max-lg:tw-visible lg:tw-invisible">
         <v-icon size="30" icon="mdi mdi-menu" @click.stop="drawer = !drawer"></v-icon>
         <v-layout class="mt-5">
           <v-navigation-drawer v-model="drawer" location="right" temporary>

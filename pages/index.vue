@@ -96,7 +96,7 @@
   </div>
   <div :style="{ backgroundColor: state.elementColor }">
     <!-- 其他组件内容 -->
-    {{ state.elementColor }}
+    <!-- {{ state.elementColor }} -->
   </div>
 </template>
 

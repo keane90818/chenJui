@@ -1,9 +1,9 @@
 <template>
   <main id="container" class="tw-flex tw-items-center tw-justify-center tw-flex-col tw-p-0">
-    <div class="intro-container tw-flex tw-my-16  md:tw-flex-col lg:tw-flex-row sm:tw-flex-col">
-      <div class="left-container tw-pt-[20px] sm:tw-mb-6 md:tw-mb-6 lg:tw-mb-0">
-        <div class="tw-text-7xl tw-font-semibold tw-mr-48 tw-text-[#c47f42]">歷史建築</div>
-        <div class="tw-w-96 tw-text-[18px] tw-font-semibold tw-text-[#6b0020] tw-ml-6 tw-mt-24 tw-leading-[1.5em]">
+    <div class="intro-container tw-flex tw-my-16 max-lg:tw-flex-col lg:tw-flex-row lg:tw-gap-20">
+      <div class="left-container tw-pt-[20px] max-lg:tw-my-10 max-lg:tw-mx-2">
+        <div class="tw-text-7xl tw-font-semibold md:tw-mr-5 tw-text-[#c47f42]">歷史建築</div>
+        <div class="tw-w-96 tw-text-[18px] tw-font-semibold tw-text-[#6b0020] lg:tw-ml-6 lg:tw-mt-24 max-lg:tw-mt-5 tw-leading-[1.5em]">
           民間習俗大考前都會拜拜祈求考試順利，香火鼎盛的登瀛書院不只是開啟智慧的拜拜好所在，更是擁有百年歷史的縣定古蹟。結束惱人的考試後，好不容易有時間想要好好看場電影，卻又不想花大錢大老遠跑去台中，帶有在地溫暖人情的文創老建築南投戲院是你的最佳選擇 !
         </div>
       </div>
@@ -11,9 +11,9 @@
         <img src="../../assets/map/historic-buildings-map.jpg" alt="traditional-crafts-map" height="436" width="624">
       </div>
     </div>
-    <v-card class="detail-container tw-mb-10 sm:tw-flex-col md:tw-flex-col lg:tw-flex-row">
-      <div class="LaiFa-area tw-flex sm:tw-flex-col md:tw-flex-row">
-        <img src="../../assets/imgs/DengYing.png" alt="DengYing" class="traditional-crafts-img tw-mr-4 tw-h-[320px] tw-w-[240px]">
+    <v-card class="detail-container tw-mb-10 max-lg:tw-flex-col lg:tw-flex-row">
+      <div class="DengYing-area tw-flex max-md:tw-flex-col md:tw-flex-row lg:tw-flex-row">
+        <img src="../../assets/imgs/DengYing.png" alt="DengYing" class="traditional-crafts-img tw-mr-4 tw-h-[320px] tw-w-[240px] max-md:tw-w-full max-md:tw-h-[400px]">
         <div class="area-info-container tw-w-[320px] tw-h-[320px] tw-px-9 tw-py-5">
           <div class="title tw-text-lg tw-font-semibold tw-text-[#535963]">登瀛書院</div>
           <div class="desc tw-h-[180px] tw-break-all tw-text-sm tw-my-6 tw-leading-loose tw-text-[#4F5168]">
@@ -22,8 +22,8 @@
           <NuxtLink to="/historicBuildings/DengYing" class="navigate tw-text-sm tw-font-semibold tw-text-[#FF6734]">Read More &rarr;</NuxtLink>
         </div>
       </div>
-      <div class="GuanDe-area tw-flex sm:tw-flex-col md:tw-flex-row">
-        <img src="../../assets/imgs/NanTou.png" alt="NanTouTheater" class="traditional-crafts-img tw-mr-4 tw-h-[320px] tw-w-[240px]">
+      <div class="NanTouTheater-area tw-flex max-md:tw-flex-col md:tw-flex-row lg:tw-flex-lg">
+        <img src="../../assets/imgs/NanTou.png" alt="NanTouTheater" class="traditional-crafts-img tw-mr-4 tw-h-[320px] tw-w-[240px] max-md:tw-w-full max-md:tw-h-[400px]">
         <div class="area-info-container tw-w-[320px] tw-h-[320px] tw-px-9 tw-py-5">
             <div class="title tw-text-lg tw-font-semibold tw-text-[#535963]">南投戲院</div>
             <div class="desc tw-h-[180px] tw-break-all tw-text-sm tw-my-6 tw-leading-loose tw-text-[#4F5168]">

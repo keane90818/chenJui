@@ -9,7 +9,7 @@
         <img src="../../assets/map/traditional-crafts-map.jpg" alt="traditional-crafts-map" height="436" width="624">
       </div>
     </div>
-    <v-card class="detail-container tw-mb-10 sm:tw-flex-col max-lg:tw-flex-col lg:tw-flex-row">
+    <v-card class="detail-container tw-mb-10 max-lg:tw-flex-col lg:tw-flex-row">
       <div class="LaiFa-area tw-flex max-md:tw-flex-col md:tw-flex-row lg:tw-flex-row">
         <img src="../../assets/imgs/LaiFaImg.png" alt="LaiFa" height="320" width="220" class="traditional-crafts-img tw-mr-4">
         <div class="area-info-container tw-w-[220px] tw-px-9 tw-py-5">

@@ -1,11 +1,11 @@
 <template>
   <main class="tw-flex tw-items-center tw-justify-center tw-flex-col tw-p-0">
-    <div class="tw-w-full tw-px-96 tw-pt-10">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-pt-10">
       <div class="tw-flex tw-flex-row">
         <h1 class="tw-text-[#003C45] tw-text-7xl tw-font-extrabold tw-mb-8">源振發製麵廠</h1>
       </div>
-      <div class="tw-flex tw-gap-20 tw-pb-10">
-        <div class="tw-w-[19rem]">
+      <div class="tw-flex tw-gap-20 tw-pb-10 max-lg:tw-flex-col">
+        <div class="lg:tw-w-[19rem]">
           <h4 class="tw-font-bold tw-text-[#333333]">南投意麵創始店</h4>
           <h4 class="tw-font-bold tw-text-[#333333]">堅持古法走過百年</h4>
           <hr class="tw-border-gray-500 tw-my-1" />
@@ -17,15 +17,15 @@
             南投意麵雖說是由源振發發明，卻因地區性的主食不能申請專利，所以市場上各家的製麵廠還是可以打著各種南投意麵的頭銜，但源振發始終相信遵循古法保留下來的傳統好味道。
           </p>
         </div>
-        <div class="tw-h-full tw-w-[750px]">
+        <div class="lg:tw-h-full lg:tw-w-[750px]">
           <img src="../../../assets/gourmetFood/YuanJhenFa/1.jpg"  alt=""/>
           <p class="tw-text-start tw-text-gray-500 tw-pt-2">古早砝碼秤陪伴許家走過百年歲月。攝/蔡沛凌</p>
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-px-96 tw-bg-[#487178] tw-text-white tw-py-20">
-      <div class="tw-flex tw-gap-20">
-        <div class="tw-w-[33rem]">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-bg-[#487178] tw-text-white tw-py-20">
+      <div class="tw-flex tw-gap-20 max-lg:tw-flex-col">
+        <div class="lg:tw-w-[33rem]">
           <h1 class="tw-font-bold tw-text-4xl ">獨創麵食輕薄軟Q</h1>
           <h1 class="tw-font-bold tw-text-4xl ">經驗拿捏百年精隨</h1>
           <p class="tw-text-[18px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-10">
@@ -35,18 +35,18 @@
             在製程上，源振發從爺爺許星雲開始就以機器製作為主，許嘉麟則說製麵最困難的部分不是人為而是自然現象，屬於天氣與溫濕度的變化，像是遇到寒流平地溫度接近零度的時後，製麵就會非常不好操作，因為不管是麵粉的吸水性還是麵粉攪拌發酵的程度都會完全不一樣，溫度太低會導致麵糰攪拌不會發酵，這就必須由手工與人工的經驗來去預估筋性的變化，並判斷天氣進而調整麵團的溫濕度。製麵過程的判斷主要靠經驗，使用機器代替勞力製作，這其中技術的拿捏，就是百年來的精髓。
           </p>
         </div>
-        <div class="tw-h-[400px] tw-w-[500px] tw-pt-20">
+        <div class="lg:tw-h-[400px] lg:tw-w-[500px] lg:tw-pt-20">
           <v-carousel hide-delimiters height="400">
-            <v-carousel-item :src="carousel1" cover width="100%" height="400px"></v-carousel-item>
-            <v-carousel-item :src="carousel2" cover width="100%" height="400px"></v-carousel-item>
-            <v-carousel-item :src="carousel3" cover width="100%" height="400px"></v-carousel-item>
+            <v-carousel-item :src="carousel1" cover width="100%"></v-carousel-item>
+            <v-carousel-item :src="carousel2" cover width="100%"></v-carousel-item>
+            <v-carousel-item :src="carousel3" cover width="100%"></v-carousel-item>
           </v-carousel>
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-pl-96 tw-pr-72 tw-bg-[#394A52] tw-text-white tw-py-20">
-      <div class="tw-flex tw-gap-10 tw-h-full">
-        <div class="tw-w-[40rem]">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-pl-96 tw-pr-72 tw-bg-[#394A52] tw-text-white tw-py-20">
+      <div class="tw-flex tw-gap-10 tw-h-full max-lg:tw-flex-col">
+        <div class="lg:tw-w-[40rem]">
           <h1 class="tw-font-bold tw-text-3xl ">接下製麵傳承重擔</h1>
           <h1 class="tw-font-bold tw-text-3xl ">只為保留最初的傳統滋味</h1>
           <hr class="tw-my-4 tw-border-[#868176]" />
@@ -57,13 +57,13 @@
             在未來的發展上，許嘉麟也不把話說死，雖然依然會想用傳統的方式去製作，但希望在不影響味道的狀況下，能夠以傳承傳統為前提下去開發，讓從農業時代一直到現在科技文化下的南投意麵也能既傳統又迎合時代。
           </p>
         </div>
-        <div class="tw-h-full tw-w-[800px]">
+        <div class="lg:tw-h-full lg:tw-w-[800px]">
           <img src="../../../assets/gourmetFood/YuanJhenFa/3.jpg" class="" alt=""/>
           <p class="tw-text-[14px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-3">堅持傳統製作，只為保留百年好味道。攝/蔡沛凌</p>
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-px-96 tw-bg-[#E5E5E5] tw-text-[#535963] tw-py-20">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-bg-[#E5E5E5] tw-text-[#535963] tw-py-20">
       <div class="tw-flex tw-gap-20">
         <iframe width="1259" height="708" src="https://www.youtube.com/embed/qBbR-DqwFcY" title="陳酒家釀-源振發製麵廠" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>

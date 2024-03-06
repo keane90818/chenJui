@@ -1,11 +1,11 @@
 <template>
   <main class="tw-flex tw-items-center tw-justify-center tw-flex-col tw-p-0">
-    <div class="tw-w-full tw-px-96 tw-pt-10">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-pt-10">
       <div class="tw-flex tw-flex-row">
         <h1 class="tw-text-[#681535] tw-text-7xl tw-mb-8">來發鐵店</h1>
       </div>
-      <div class="tw-flex tw-gap-20">
-        <div class="tw-w-72">
+      <div class="tw-flex tw-gap-20 max-lg:tw-flex-col">
+        <div class="lg:tw-w-72">
           <h4 class="tw-font-bold tw-text-[#7f6c8f]">竹山打鐵巷沒落</h4>
           <h4 class="tw-font-bold tw-text-[#7f6c8f]">打鐵職人靠手藝迎擊</h4>
           <hr class="tw-border-gray-500 tw-my-1" />
@@ -14,36 +14,36 @@
             南投竹山因盛產竹子，早期農業社會需上山砍竹、挖竹筍，便開始有各式刀具的需求，於是在當地形成一條打鐵巷，其中的砍刀、割筍刀，或是耕作農田所需的鐮刀、鋤頭等，都由打鐵鋪所造。隨著產業變遷，自動化機械生產普及，傳統的打鐵店逐漸凋零，許多鐵舖也因為沒有後代繼承漸漸消失，不過當地第一間從清朝末年開始發跡的百年鐵舖「來發鐵店」，至今仍不改迷人的打鐵風景，堅持手工打造的鑄鐵技術遠近馳名，在現代更顯得特殊而珍貴，也讓人喜愛上手工鐵具獨有的溫度。
           </p>
         </div>
-        <div class="tw-h-[750px] tw-w-[750px]">
+        <div class="lg:tw-h-[750px] lg:tw-w-[750px]">
           <img src="../../../assets/traditionalCrafts/LaiFa/1.jpg"  alt=""/>
           <p class="tw-text-end tw-text-gray-500 tw-pt-2">郭慶順手工製刀過程火光飛濺。攝/白欣卉</p>
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-px-96 tw-bg-[#E5E5E5] tw-text-[#535963] tw-py-40">
-      <div class="tw-flex tw-gap-20">
-        <div class="tw-w-[31rem]">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-bg-[#E5E5E5] tw-text-[#535963] tw-py-40">
+      <div class="tw-flex tw-gap-20 max-lg:tw-flex-col">
+        <div class="lg:tw-w-[31rem]">
           <h1 class="tw-font-bold tw-text-4xl ">星星之火的淬煉</h1>
           <h1 class="tw-font-bold tw-text-4xl ">打鐵匠人的獨門技藝</h1>
           <p class="tw-text-[18px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-10">
             來發鐵店第四代傳人郭慶順，最引以為傲自家菜刀是全台少數遵循古法「鐵包鋼」工藝製作。鐵包鋼的優點是好磨、有韌性，以及提升打鐵上的手感，祖傳鐵包鋼工藝就像包三明治一樣，將鋼條放到鐵塊裡，接著上下打鐵鍛造塑形，目的是為了將鐵與鋼緊密融合，歷經千錘百鍊，才能慢慢變成刀的雛形。儘管比起一般鋼板，鐵包鋼工序複雜，還得花上三、四個鐘頭反覆熔融鍛造，但刀具使用起來卻最堅固耐磨。
           </p>
         </div>
-        <div class="tw-h-[400px] tw-w-[700px]">
+        <div class="lg:tw-h-[400px] lg:tw-w-[700px]">
           <v-carousel hide-delimiters height="400">
-            <v-carousel-item :src="carousel1" cover width="100%" height="400px"></v-carousel-item>
-            <v-carousel-item :src="carousel2" cover width="100%" height="400px"></v-carousel-item>
-            <v-carousel-item :src="carousel3" cover width="100%" height="400px"></v-carousel-item>
+            <v-carousel-item :src="carousel1" cover width="100%"></v-carousel-item>
+            <v-carousel-item :src="carousel2" cover width="100%"></v-carousel-item>
+            <v-carousel-item :src="carousel3" cover width="100%"></v-carousel-item>
           </v-carousel>
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-px-96 tw-bg-[#7e7e7e] tw-text-white tw-pt-20">
-      <div class="tw-flex tw-gap-10 tw-h-full">
-        <div class="tw-h-[500px] tw-w-[480px]">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-bg-[#7e7e7e] tw-text-white tw-pt-20">
+      <div class="tw-flex tw-gap-10 tw-h-full max-lg:tw-flex-col">
+        <div class="lg:tw-h-[500px] lg:tw-w-[480px] max-lg:tw-order-2 max-lg:tw-pb-10">
           <img src="../../../assets/traditionalCrafts/LaiFa/3.jpg"  alt=""/>
         </div>
-        <div class="tw-w-[33rem]">
+        <div class="lg:tw-w-[33rem] max-lg:tw-order-1">
           <h1 class="tw-font-bold tw-text-4xl ">百年傳承</h1>
           <h1 class="tw-font-bold tw-text-4xl ">剛硬鐵具後的鐵漢柔情</h1>
           <hr class="tw-my-4" />
@@ -52,12 +52,12 @@
           </p>
         </div>
       </div>
-      <div class="tw-flex tw-gap-10 tw-h-full">
-        <div class="tw-h-[500px] tw-w-[480px]">
+      <div class="tw-flex tw-gap-10 tw-h-full max-lg:tw-flex-col">
+        <div class="lg:tw-h-[500px] lg:tw-w-[480px] max-lg:tw-order-2 max-lg:tw-pb-10">
           <img src="../../../assets/traditionalCrafts/LaiFa/4.jpg"  alt=""/>
           <p class="tw-mt-2">百年傳承，手工製刀。攝/白欣卉</p>
         </div>
-        <div class="tw-w-[33rem]">
+        <div class="lg:tw-w-[33rem] max-lg:tw-order-1">
           <h1 class="tw-font-bold tw-text-4xl ">父子攜手拚轉型</h1>
           <h1 class="tw-font-bold tw-text-4xl ">為夕陽產業走出新路</h1>
           <hr class="tw-my-4" />
@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-px-96 tw-bg-[#E5E5E5] tw-text-[#535963] tw-py-20">
+    <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-bg-[#E5E5E5] tw-text-[#535963] tw-py-20">
       <div class="tw-flex tw-gap-20">
         <iframe width="1259" height="708" src="https://www.youtube.com/embed/4rp1iBNHqUQ" title="陳酒家釀-來發鐵店" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>

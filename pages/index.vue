@@ -23,7 +23,7 @@
         </v-card>
       </v-dialog>
     </v-row>
-    <div id="banner">
+    <div id="banner" class="tw-mt-3">
       <div class="topic">
         <h1>CHEN JIA</h1>
         <h1>JIU-NIANG</h1>

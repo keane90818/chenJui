@@ -1,14 +1,14 @@
 <template>
   <div class="main-header">
-    <div class="container">
-      <img src="../assets/logo.png" alt="陳酒家釀" style="height: 70px" class="ml-10 mb-2" />
+    <div class="container tw-h-[90px]">
+      <img src="../assets/logo.png" alt="陳酒家釀" style="height: 60px" class="ml-10 mb-2" />
 
-      <button class="hamburger mt-5 mr-5">
+      <button class="hamburger mt-5 mr-5 max-lg:tw-visible lg:tw-invisible">
         <v-icon size="30" icon="mdi mdi-menu" @click.stop="drawer = !drawer"></v-icon>
         <v-layout class="mt-5">
           <v-navigation-drawer v-model="drawer" location="right" temporary>
             <v-list v-model:opened="open">
-              <v-list-item prepend-icon="mdi-home" title="Home"></v-list-item>
+              <v-list-item prepend-icon="mdi-home" title="Home" href="/"></v-list-item>
 
               <v-list-group value="historyBuild">
                 <template v-slot:activator="{ props }">
@@ -19,11 +19,12 @@
                   ></v-list-item>
                 </template>
                 <v-list-item
-                  v-for="([title, icon], i) in historyBuild"
+                  v-for="([title, icon, route], i) in historyBuild"
                   :key="i"
                   :value="title"
                   :title="title"
                   :prepend-icon="icon"
+                  :href="`/historicBuildings/${route}`"
                 ></v-list-item>
               </v-list-group>
               <v-list-group value="skills">
@@ -35,11 +36,12 @@
                   ></v-list-item>
                 </template>
                 <v-list-item
-                  v-for="([title, icon], i) in skills"
+                  v-for="([title, icon, route], i) in skills"
                   :key="i"
                   :value="title"
                   :title="title"
                   :prepend-icon="icon"
+                  :href="`/traditionalCrafts/${route}`"
                 ></v-list-item>
               </v-list-group>
               <v-list-group value="foodStore">
@@ -51,11 +53,13 @@
                   ></v-list-item>
                 </template>
                 <v-list-item
-                  v-for="([title, icon], i) in foodStore"
+                  v-for="([title, icon, route], i) in foodStore"
                   :key="i"
                   :value="title"
                   :title="title"
                   :prepend-icon="icon"
+                  :href="`/gourmetFood/${route}`"
+
                 ></v-list-item>
               </v-list-group>
             </v-list>
@@ -65,48 +69,51 @@
 
       <nav class="nav-content">
         <ul class="main-menu">
-          <li><a href="#">首頁</a></li>
+          <li><a href="/">首頁</a></li>
           <li class="dropdown">
-            <a href="#">歷史建築</a>
+            <a href="/historicBuildings">歷史建築</a>
             <ul class="dropdown-content">
               <li>
-                <a href="#">南投戲院</a>
+                <a href="/historicBuildings/NanTouTheater">南投戲院</a>
               </li>
               <li>
-                <a href="#">登瀛書院</a>
+                <a href="/historicBuildings/DengYing">登瀛書院</a>
               </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">傳統技藝</a>
+            <a href="/traditionalCrafts">傳統技藝</a>
             <ul class="dropdown-content">
               <li>
-                <a href="#">來發鐵店</a>
+                <a href="/traditionalCrafts/LaiFa">來發鐵店</a>
               </li>
               <li>
-                <a href="#">冠德竹木精品社</a>
+                <a href="/traditionalCrafts/GuanDe">冠德竹木精品社</a>
               </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">美食老店</a>
+            <a href="/gourmetFood">美食老店</a>
             <ul class="dropdown-content">
               <li>
-                <a href="#">黑狗兄傳統手工餅舖</a>
+                <a href="/gourmetFood/HeiGou">黑狗兄傳統手工餅舖</a>
               </li>
               <li>
-                <a href="#">源振發製麵廠</a>
+                <a href="/gourmetFood/YuanJhenFa">源振發製麵廠</a>
               </li>
             </ul>
           </li>
-          <li><a href="#">團隊介紹</a></li>
-          <li><a href="#">友站連結</a></li>
+          <li><a href="/about">團隊介紹</a></li>
+          <li><a href="/friendSites">友站連結</a></li>
         </ul>
       </nav>
     </div>
   </div>
 
   <slot />
+  <footer class="tw-bg-myColor tw-px-10 tw-py-6 tw-text-white">
+    &copy; Copyright 2022 POUND達. All Rights Reserved.
+  </footer>
 </template>
 <script>
 export default {
@@ -116,17 +123,46 @@ export default {
       group: null,
       open: ["Users"],
       historyBuild: [
-        ["南投戲院", "mdi mdi-theater"],
-        ["登瀛書院", "mdi mdi-bookshelf"]
+        ["南投戲院", "mdi mdi-theater", "NanTouTheater"],
+        ["登瀛書院", "mdi mdi-bookshelf", "DengYing"]
       ],
       skills: [
-        ["來發鐵店", "mdi mdi-iron-board"],
-        ["冠德竹木精品社", "mdi mdi-pine-tree-variant-outline"]
+        ["來發鐵店", "mdi mdi-iron-board", "LaiFa"],
+        ["冠德竹木精品社", "mdi mdi-pine-tree-variant-outline", "GuanDe"]
       ],
       foodStore: [
-        ["源振發製麵廠", "mdi mdi-noodles"],
-        ["黑狗兄傳統手工餅舖", "mdi mdi-food-hot-dog"]
-      ]
+        ["源振發製麵廠", "mdi mdi-noodles", "YuanJhenFa"],
+        ["黑狗兄傳統手工餅舖", "mdi mdi-food-hot-dog",  "HeiGou"]
+      ],
+      items: [
+        { type: "subheader", title: "Group #1" },
+        {
+          title: "Item #1",
+          value: 1,
+        },
+        {
+          title: "Item #2",
+          value: 2,
+        },
+        {
+          title: "Item #3",
+          value: 3,
+        },
+        { type: "divider" },
+        { type: "subheader", title: "Group #2" },
+        {
+          title: "Item #4",
+          value: 4,
+        },
+        {
+          title: "Item #5",
+          value: 5,
+        },
+        {
+          title: "Item #6",
+          value: 6,
+        },
+      ],
     };
   },
   methods: {}

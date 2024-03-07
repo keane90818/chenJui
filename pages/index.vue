@@ -3,12 +3,12 @@
     <v-row justify="center">
       <v-dialog v-model="dialog" persistent fullscreen>
         <v-card id="introduce" class="tw-flex tw-justify-center">
-          <v-text class="tw-flex tw-justify-center">
+          <div class="tw-flex tw-justify-center">
             <img class="tw-max-w-sm" src="../assets/logo.png" alt="陳酒家釀" />
-          </v-text>
-          <v-text class="tw-flex tw-justify-center">
+          </div>
+          <div class="tw-flex tw-justify-center">
             <img class="tw-max-w-sm" src="../assets/introtuce.png" alt="陳酒家釀" />
-          </v-text>
+          </div>
           <v-card-actions class="tw-flex tw-justify-center">
             <v-btn
               color="brown-darken-1 "
@@ -240,7 +240,6 @@ export default {
       padding-top: 15rem;
       overflow: hidden;
       display: flex;
-      justify-content: start;
       flex-wrap: wrap;
       h1 {
         margin-left: 6rem;
@@ -274,7 +273,6 @@ export default {
       padding-top: 10rem;
       overflow: hidden;
       display: flex;
-      justify-content: start;
       margin-left: 5rem;
       flex-wrap: nowrap;
 
@@ -311,7 +309,6 @@ export default {
       padding-top: 10rem;
       overflow: hidden;
       display: flex;
-      justify-content: start;
       flex-wrap: nowrap;
 
       h1 {

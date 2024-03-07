@@ -1,9 +1,9 @@
 <template>
-  <div class="tw-flex tw-gap-20">
-    <div class="tw-flex tw-w-[32rem] tw-h-[20rem] tw-border-2 tw-border-[#B99775] tw-border-dashed tw-justify-center tw-items-center">
+  <div class="tw-flex lg:tw-gap-20 max-lg:tw-flex-col">
+    <div class="max-lg:tw-order-2 tw-flex lg:tw-w-[32rem] lg:tw-h-[20rem] max-lg:tw-py-2 tw-border-2 tw-border-[#B99775] tw-border-dashed tw-justify-center tw-items-center">
       <img :src=getImg alt="" class="tw-w-96" >
     </div>
-    <div class="tw-mt-10">
+    <div class="max-lg:tw-order-1 tw-mt-10">
       <p class="tw-font-bold" :class=getCategoryColor>{{ getCategoryData }}</p>
       <p class="tw-mt-3 tw-text-5xl">{{ getName }}</p>
       <a class="tw-text-[#A47C5B] tw-font-bold tw-mt-5 tw-text-xl" href="">網站連結 ></a>

@@ -16,7 +16,7 @@
           </p>
         </div>
         <div class="lg:tw-w-[750px]">
-          <img src="../../../assets/historicBuildings/NantouTheater/1.jpg" alt="" class="tw-h-full tw-w-auto" />
+          <img src="../../../assets/historicBuildings/NanTouTheater/1.jpg" alt="" class="tw-h-full tw-w-auto" />
           <p class="tw-text-end tw-text-gray-500 tw-pt-2">南投戲院建築外貌。攝/白欣卉</p>
         </div>
       </div>
@@ -75,12 +75,12 @@
   </div>
 </template>
 <script setup>
-import carousel1 from "../../../assets/historicBuildings/NantouTheater/2_1.jpg";
-import carousel2 from "../../../assets/historicBuildings/NantouTheater/2_2.jpg";
-import carousel3 from "../../../assets/historicBuildings/NantouTheater/2_3.jpg";
-import carousel4 from "../../../assets/historicBuildings/NantouTheater/2_4.jpg";
-import carousel5 from "../../../assets/historicBuildings/NantouTheater/2_5.jpg";
-import carousel6 from "../../../assets/historicBuildings/NantouTheater/2_6.jpg";
-import carousel7 from "../../../assets/historicBuildings/NantouTheater/2_7.jpg";
+import carousel1 from "../../../assets/historicBuildings/NanTouTheater/2_1.jpg";
+import carousel2 from "../../../assets/historicBuildings/NanTouTheater/2_2.jpg";
+import carousel3 from "../../../assets/historicBuildings/NanTouTheater/2_3.jpg";
+import carousel4 from "../../../assets/historicBuildings/NanTouTheater/2_4.jpg";
+import carousel5 from "../../../assets/historicBuildings/NanTouTheater/2_5.jpg";
+import carousel6 from "../../../assets/historicBuildings/NanTouTheater/2_6.jpg";
+import carousel7 from "../../../assets/historicBuildings/NanTouTheater/2_7.jpg";
 </script>
 <style scoped></style>

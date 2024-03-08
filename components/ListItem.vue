@@ -26,31 +26,31 @@ const props = defineProps({
 })
 
 const table = {
-  // "NanTouTheater" : {
-  //   name: "南投戲院",
-  //   img: imgNanTou,
-  //   url: "https://www.nantoutheater.com/index",
-  // },
-  // "DengYing" : {
-  //   name: "登瀛書院",
-  //   img: imgDengYing,
-  //   url: "https://www.dysy.org.tw/",
-  // },
-  // "LaiFa" : {
-  //   name: "來發鐵店",
-  //   img: imgLaiFa,
-  //   url: "https://www.facebook.com/Laifarblacksmithshop/",
-  // },
-  // "GuanDe" : {
-  //   name: "冠德竹木精品社",
-  //   img: imgGuanDe,
-  //   url: "#"
-  // },
-  // "HeiGou" : {
-  //   name: "黑狗兄傳統餅舖",
-  //   img: imgHeiGou,
-  //   url: "https://www.facebook.com/nutodog/?locale=zh_TW",
-  // },
+  "NanTouTheater" : {
+    name: "南投戲院",
+    img: imgNanTou,
+    url: "https://www.nantoutheater.com/index",
+  },
+  "DengYing" : {
+    name: "登瀛書院",
+    img: imgDengYing,
+    url: "https://www.dysy.org.tw/",
+  },
+  "LaiFa" : {
+    name: "來發鐵店",
+    img: imgLaiFa,
+    url: "https://www.facebook.com/Laifarblacksmithshop/",
+  },
+  "GuanDe" : {
+    name: "冠德竹木精品社",
+    img: imgGuanDe,
+    url: "#"
+  },
+  "HeiGou" : {
+    name: "黑狗兄傳統餅舖",
+    img: imgHeiGou,
+    url: "https://www.facebook.com/nutodog/?locale=zh_TW",
+  },
   "YuanJhenFa" : {
     name: "源振發製麵廠",
     img: imgYuanJhenFa,

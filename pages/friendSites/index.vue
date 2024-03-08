@@ -29,11 +29,11 @@
         </div>
     </div>
     <div class="tw-py-20 tw-w-full max-lg:tw-px-6 lg:tw-px-96 tw-bg-[#F1EDE3] tw-gap-20">
-      <!-- <ListItem name="NanTouTheater" category="historicBuildings" class="tw-mt-20"/>
+      <ListItem name="NanTouTheater" category="historicBuildings" class="tw-mt-20"/>
       <ListItem name="DengYing" category="historicBuildings" class="tw-mt-20"/>
       <ListItem name="LaiFa" category="traditionalCrafts" class="tw-mt-20"/>
       <ListItem name="GuanDe" category="traditionalCrafts" class="tw-mt-20"/>
-      <ListItem name="HeiGou" category="gourmetFood" class="tw-mt-20"/> -->
+      <ListItem name="HeiGou" category="gourmetFood" class="tw-mt-20"/>
       <ListItem name="YuanJhenFa" category="gourmetFood" class="tw-mt-20"/>
     </div>
   </div>

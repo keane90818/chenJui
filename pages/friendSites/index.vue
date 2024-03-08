@@ -47,7 +47,7 @@ import carousel4 from "../../assets/friendSites/1_4.jpg";
 import carousel5 from "../../assets/friendSites/1_5.jpg";
 import carousel6 from "../../assets/friendSites/1_6.jpg";
 
-// import ListItem from "../../components/ListItem.vue";
+import ListItem from "../../components/ListItem.vue";
 
 </script>
 

@@ -1,7 +1,9 @@
 <template>
   <div class="main-header">
     <div class="container tw-h-[90px]">
-      <img src="../assets/logo.png" alt="陳酒家釀" style="height: 60px" class="ml-10 mb-2" />
+      <nuxt-link  to="/">
+        <img src="../assets/logo.png" alt="陳酒家釀" style="height: 60px" class="ml-10 mb-2" />
+      </nuxt-link>
 
       <button class="hamburger mt-5 mr-5 max-lg:tw-visible lg:tw-invisible">
         <v-icon size="30" icon="mdi mdi-menu" @click.stop="drawer = !drawer"></v-icon>

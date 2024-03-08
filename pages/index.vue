@@ -43,7 +43,7 @@
         <!-- <h1 class="text-7xl py-12">主題介紹</h1> -->
       </div>
       <div class="tw-flex tw-flex-wrap tw-justify-around">
-        <div class="beerDiv tw-max-h-72">
+        <nuxt-link class="beerDiv tw-max-h-72" to="/historicBuildings">
           <img
             id="historyBeer"
             ref="historyBeerRef"
@@ -51,8 +51,8 @@
             src="../assets/historyBeer.png"
             alt=""
           />
-        </div>
-        <div class="beerDiv tw-max-h-72">
+        </nuxt-link>
+        <nuxt-link class="beerDiv tw-max-h-72" to="/traditionalCrafts">
           <img
             id="skillBeer"
             ref="skillBeerRef"
@@ -60,8 +60,8 @@
             src="../assets/skillBeer.png"
             alt=""
           />
-        </div>
-        <div class="beerDiv tw-max-h-72">
+        </nuxt-link>
+        <nuxt-link class="beerDiv tw-max-h-72" to="/gourmetFood">
           <img
             id="foodBeer"
             ref="foodBeerRef"
@@ -69,7 +69,7 @@
             src="../assets/foodBeer.png"
             alt=""
           />
-        </div>
+        </nuxt-link>
       </div>
     </div>
     <div id="storyMap">
@@ -101,11 +101,15 @@
 </template>
 
 <script>
-import { reactive, onMounted, onBeforeUnmount, watch } from "vue";
+import { reactive, onMounted, onBeforeUnmount, watch, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   setup() {
+    const historyBeerRef = ref(null);
+    const skillBeerRef = ref(null);
+    const foodBeerRef = ref(null);
+
     const items = ref([
       {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -163,6 +167,22 @@ export default {
     // 以上為抓取螢幕寬度
     const triggers = ScrollTrigger.getAll();
     // 以上為抓取scroll
+    
+    const beerClicked = (refName) => {
+      console.log(refName + ":", getBeerRef(refName));
+    };
+
+    const getBeerRef = (refName) => {
+      switch (refName) {
+        case "historyBeer":
+          return historyBeerRef.value;
+        case "skillBeer":
+          return skillBeerRef.value;
+        case "foodBeer":
+          return foodBeerRef.value;
+      }
+    };
+
     onMounted(() => {
       handleWindowResize(); // 初始化处理
       // 监听窗口大小变化
@@ -204,7 +224,11 @@ export default {
     return {
       state,
       items,
-      dialog
+      dialog,
+      historyBeerRef,
+      skillBeerRef,
+      foodBeerRef,
+      beerClicked,
     };
   }
 };
@@ -342,16 +366,19 @@ export default {
     #historyBeer {
       &:hover {
         content: url("../assets/historyBeer-open.png");
+        cursor: pointer;
       }
     }
     #skillBeer {
       &:hover {
         content: url("../assets/skillBeer-open.png");
+        cursor: pointer;
       }
     }
     #foodBeer {
       &:hover {
         content: url("../assets/foodBeer-open.png");
+        cursor: pointer;
       }
     }
   }

@@ -13,11 +13,11 @@
 
 <script setup>
 import { computed } from 'vue';
-// import imgNanTou from "../assets/historicBuildings/NanTouTheater/1.jpg";
-// import imgDengYing from "../assets/historicBuildings/DengYing/3_7.jpg";
-// import imgLaiFa from "../assets/traditionalCrafts/LaiFa/4.jpg";
-// import imgGuanDe from "../assets/traditionalCrafts/GuanDe/2.jpg";
-// import imgHeiGou from "../assets/gourmetFood/HeiGou/2_3.jpg";
+import imgNanTou from "../assets/historicBuildings/NanTouTheater/1.jpg";
+import imgDengYing from "../assets/historicBuildings/DengYing/3_7.jpg";
+import imgLaiFa from "../assets/traditionalCrafts/LaiFa/4.jpg";
+import imgGuanDe from "../assets/traditionalCrafts/GuanDe/2.jpg";
+import imgHeiGou from "../assets/gourmetFood/HeiGou/2_3.jpg";
 import imgYuanJhenFa from "../assets/gourmetFood/YuanJhenFa/3.jpg";
 
 const props = defineProps({

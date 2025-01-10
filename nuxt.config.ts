@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   plugins: [
-    '~/plugins/google-analytics.client.ts', // 新增的插件路徑
+    '~/plugins/google-analytics.client.ts', // 引用插件
   ],
   app: {
     head: {
@@ -42,18 +42,7 @@ export default defineNuxtConfig({
           async: true,
           src: 'https://www.googletagmanager.com/gtag/js?id=G-V3VTFF8PLS',
         },
-        {
-          hid: 'google-analytics',
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-V3VTFF8PLS');
-          `,
-          type: 'text/javascript',
-        },
       ],
-      __dangerouslyDisableSanitizers: ['script'], // 使用正確的屬性
     },
   },
 });

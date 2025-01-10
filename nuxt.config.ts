@@ -1,15 +1,17 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
 export default defineNuxtConfig({
-  ssr:true,
-  css: ['~/assets/css/main.css',"vuetify/lib/styles/main.sass", "@mdi/font/css/materialdesignicons.min.css","animate.css/animate.min.css"],
+  ssr: true,
+  css: [
+    '~/assets/css/main.css',
+    "vuetify/lib/styles/main.sass",
+    "@mdi/font/css/materialdesignicons.min.css",
+    "animate.css/animate.min.css"
+  ],
   typescript: {
     typeCheck: true
   },
   build: {
     transpile: ["vuetify"]
   },
-  
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -25,8 +27,22 @@ export default defineNuxtConfig({
   },
   modules: [
     [
-      "unplugin-icons/nuxt",{}
+      "unplugin-icons/nuxt", {}
     ],
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+  plugins: [
+    '~/plugins/google-analytics.client.ts', // 引用插件
+  ],
+  app: {
+    head: {
+      script: [
+        {
+          hid: 'google-tag',
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-V3VTFF8PLS',
+        },
+      ],
+    },
+  },
 });

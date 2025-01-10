@@ -36,6 +36,21 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      title: "陳酒家釀 - 南投百年老店",
+      meta: [
+        {
+          name: "description",
+          content: "陳酒家釀，南投百年老店，提供高品質的歷史建築、傳統技藝、美食老店文化介紹。"
+        },
+        {
+          name: "keywords",
+          content: "陳酒家釀, 南投百年老店, 歷史建築, 傳統技藝, 美食老店"
+        },
+        {
+          name: "author",
+          content: "陳酒家釀"
+        },
+      ],
       script: [
         {
           hid: 'google-tag',

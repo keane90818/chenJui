@@ -15,7 +15,7 @@
           </p>
         </div>
         <div class="lg:tw-h-full lg:tw-w-[750px]">
-          <img src="../../../assets/gourmetFood/HeiGou/1.jpg"  alt=""/>
+          <img src="../../../assets/gourmetFood/HeiGou/1.jpg"  alt="黑狗兄傳統餅舖製作餅皮圖片"/>
           <p class="tw-text-start tw-text-gray-500 tw-pt-2">第三代老闆張榮傑每日現做手桿燒餅。攝/白欣卉</p>
         </div>
       </div>
@@ -59,8 +59,8 @@
           </p>
         </div>
         <div class="lg:tw-h-full lg:tw-w-[500px]">
-          <img src="../../../assets/gourmetFood/HeiGou/3_1.jpg" alt=""/>
-          <img src="../../../assets/gourmetFood/HeiGou/3_2.jpg" class="tw-pt-8" alt=""/>
+          <img src="../../../assets/gourmetFood/HeiGou/3_1.jpg" alt="黑狗兄傳統餅舖店內牆壁圖片"/>
+          <img src="../../../assets/gourmetFood/HeiGou/3_2.jpg" class="tw-pt-8" alt="黑狗兄傳統餅舖店的食品圖"/>
           <p class="tw-text-[14px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-3">黑狗兄用燒餅向每一位客人訴說自家故事。攝/白欣卉</p>
         </div>
       </div>

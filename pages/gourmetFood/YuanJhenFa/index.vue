@@ -18,9 +18,15 @@
           </p>
         </div>
         <div class="lg:tw-h-full lg:tw-w-[750px]">
-          <img src="../../../assets/gourmetFood/YuanJhenFa/1.jpg"  alt=""/>
-          <p class="tw-text-start tw-text-gray-500 tw-pt-2">古早砝碼秤陪伴許家走過百年歲月。攝/蔡沛凌</p>
+          <img 
+            src="../../../assets/gourmetFood/YuanJhenFa/yuan-jhen-fa-traditional-noodles.jpg" 
+            alt="南投源振發展示傳統麵條製作，古早砝碼秤見證百年傳承" 
+          />
+          <p class="tw-text-start tw-text-gray-500 tw-pt-2">
+            古早砝碼秤陪伴許家走過百年歲月。攝/蔡沛凌
+          </p>
         </div>
+
       </div>
     </div>
     <div class="tw-w-full max-lg:tw-px-12 lg:tw-px-96 tw-bg-[#487178] tw-text-white tw-py-20">
@@ -58,8 +64,14 @@
           </p>
         </div>
         <div class="lg:tw-h-full lg:tw-w-[800px]">
-          <img src="../../../assets/gourmetFood/YuanJhenFa/3.jpg" class="" alt=""/>
-          <p class="tw-text-[14px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-3">堅持傳統製作，只為保留百年好味道。攝/蔡沛凌</p>
+          <img 
+            src="../../../assets/gourmetFood/YuanJhenFa/yuan-jhen-fa-traditional-food-preparation.jpg" 
+            class="" 
+            alt="南投源振發秤量每份重量，傳承百年傳統製作技藝" 
+          />
+          <p class="tw-text-[14px] tw-font-medium tw-tracking-wide tw-leading-[1.5em] tw-pt-3">
+            堅持傳統製作，只為保留百年好味道。攝/蔡沛凌
+          </p>
         </div>
       </div>
     </div>

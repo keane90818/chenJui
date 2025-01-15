@@ -18,7 +18,7 @@ import imgDengYing from "../assets/historicBuildings/DengYing/3_7.jpg";
 import imgLaiFa from "../assets/traditionalCrafts/LaiFa/4.jpg";
 import imgGuanDe from "../assets/traditionalCrafts/GuanDe/2.jpg";
 import imgHeiGou from "../assets/gourmetFood/HeiGou/2_3.jpg";
-import imgYuanJhenFa from "../assets/gourmetFood/YuanJhenFa/3.jpg";
+import imgYuanJhenFa from "../assets/gourmetFood/YuanJhenFa/yuan-jhen-fa-traditional-noodles.jpg";
 
 const props = defineProps({
   name: String,

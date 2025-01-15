@@ -8,10 +8,10 @@
           <p class="bg-team-introduction tw-text-white tw-font-bold tw-mt-4 tw-font-mono lg:tw-text-[18px] max-lg:tw-text-[14px]">TEAM INTRODUCTION</p>
         </div>
       </div>
-      <img src="../../assets/about/1.jpg" alt="" class="md:tw-w-[500px] lg:tw-w-[500px]">
+      <img src="../../assets/about/1.jpg" alt="南投陳酒家釀店內展示牆" class="md:tw-w-[500px] lg:tw-w-[500px]">
     </div>
     <div class="tw-flex max-lg:tw-px-12 lg:tw-px-96 tw-pb-6 lg:tw-ml-5 max-lg:tw-flex-col">
-      <img src="../../assets/about/logo.jpg" alt="" class="lg:tw-h-[300px] lg:tw-w-[300px] max-lg:tw-order-2">
+      <img src="../../assets/about/logo.jpg" alt="陳酒家釀品牌標誌，南投百年老店" class="lg:tw-h-[300px] lg:tw-w-[300px] max-lg:tw-order-2">
       <div class="lg:tw-w-full lg:tw-pl-20 lg:tw-pr-[3rem] max-lg:tw-py-10">
         <p class="tw-italic tw-text-[26px] tw-text-[#B65E14] tw-font-medium">陳酒家釀</p>
         <hr class="tw-w-full tw-border-black tw-mb-10 tw-mt-2">
@@ -31,17 +31,17 @@
           而 Pound 達的 Pound 則取自胖的音，跟熊貓圓圓的身材一樣，達就是達人的意思，代表我們將採訪各路匠人。
         </p>
       </div>
-      <img src="../../assets/about/poundDa.jpg" alt="" class="lg:tw-w-[500px]">
+      <img src="../../assets/about/poundDa.jpg" alt="南投陳酒家釀胖達團隊logo" class="lg:tw-w-[500px]">
     </div>
     <div class="tw-flex max-lg:tw-px-12 lg:tw-px-96 lg:tw-pb-40 tw-gap-20 max-lg:tw-pb-20 max-lg:tw-flex-col">
       <div>
-        <img src="../../assets/about/Cai.jpg" alt="" class="lg:tw-w-[505px]">
+        <img src="../../assets/about/Cai.jpg" alt="南投陳酒家釀胖達團員蔡佩玲" class="lg:tw-w-[505px]">
         <div class="tw-text-end tw-mr-8 tw-mt-8">
           <p class="bg-member tw-text-white tw-font-mono tw-font-bold">MEMBER_1</p>
         </div>
       </div>
       <div>
-        <img src="../../assets/about/Bai.jpg" alt="" class="lg:tw-w-[505px]">
+        <img src="../../assets/about/Bai.jpg" alt="南投陳酒家釀胖達團員白欣卉" class="lg:tw-w-[505px]">
         <div class="tw-text-end tw-mr-8 tw-mt-8">
           <p class="bg-member tw-text-white tw-font-mono tw-font-bold">MEMBER_2</p>
         </div>

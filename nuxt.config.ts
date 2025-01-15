@@ -32,7 +32,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   plugins: [
-    '~/plugins/google-analytics.client.ts', // 引用插件
+    '~/plugins/google-analytics.client.ts', // GA 插件
+    '~/plugins/google-tag-manager.client.ts', // GTM 插件
   ],
   app: {
     head: {
@@ -49,13 +50,6 @@ export default defineNuxtConfig({
         {
           name: "author",
           content: "陳酒家釀"
-        },
-      ],
-      script: [
-        {
-          hid: 'google-tag',
-          async: true,
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-V3VTFF8PLS',
         },
       ],
     },

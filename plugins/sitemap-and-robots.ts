@@ -1,8 +1,9 @@
 import { promises as fs } from 'fs';
-import { resolve } from 'path';
+import path from 'path';
 
 export default defineNuxtPlugin(() => {
-  if (!process.server) return; // 確保只在伺服器端執行
+  // 確保插件僅在伺服器端執行
+  if (!process.server) return;
 
   const sitemapConfig = {
     hostname: 'https://chen-jui.vercel.app/', // 線上 URL
@@ -16,9 +17,9 @@ export default defineNuxtPlugin(() => {
     Sitemap: https://chen-jui.vercel.app/sitemap.xml
   `;
 
-  // 生成 Sitemap 和 Robots 文件的伺服器端路徑
-  const sitemapPath = resolve('./public/sitemap.xml');
-  const robotsPath = resolve('./public/robots.txt');
+  // 生成 Sitemap 和 Robots.txt 文件
+  const sitemapPath = path.resolve('public/sitemap.xml');
+  const robotsPath = path.resolve('public/robots.txt');
 
   const sitemapContent = `
     <?xml version="1.0" encoding="UTF-8"?>
@@ -36,16 +37,12 @@ export default defineNuxtPlugin(() => {
     </urlset>
   `;
 
-  // 將 Sitemap 和 Robots 文件寫入 public 資料夾
-  (async () => {
-    try {
-      await fs.writeFile(sitemapPath, sitemapContent.trim(), 'utf8');
-      console.log('Sitemap generated:', sitemapPath);
+  // 將文件寫入 public 資料夾
+  fs.writeFile(sitemapPath, sitemapContent.trim(), 'utf8')
+    .then(() => console.log('Sitemap generated:', sitemapPath))
+    .catch((err) => console.error('Failed to generate sitemap:', err));
 
-      await fs.writeFile(robotsPath, robotsConfig.trim(), 'utf8');
-      console.log('Robots.txt generated:', robotsPath);
-    } catch (error) {
-      console.error('Error generating Sitemap or Robots.txt:', error);
-    }
-  })();
+  fs.writeFile(robotsPath, robotsConfig.trim(), 'utf8')
+    .then(() => console.log('Robots.txt generated:', robotsPath))
+    .catch((err) => console.error('Failed to generate robots.txt:', err));
 });

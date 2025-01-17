@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/google-analytics.client.ts', // GA 插件
     '~/plugins/google-tag-manager.client.ts', // GTM 插件
-    { src: '~/plugins/sitemap-and-robots.ts', mode: 'server' }, // sitemap 和 robots 插件
+   // { src: '~/plugins/sitemap-and-robots.ts', mode: 'server' }, // sitemap 和 robots 插件
   ],
   app: {
     head: {

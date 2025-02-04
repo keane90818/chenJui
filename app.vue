@@ -11,9 +11,7 @@ console.log("Page rendered");
 </script>
 
 <template>
-  <html>
-    <head />
-    <body>
+  
       <!-- Google Tag Manager (noscript) -->
       <noscript>
         <iframe
@@ -29,6 +27,5 @@ console.log("Page rendered");
           <NuxtPage />
         </NuxtLayout>
       </div>
-    </body>
-  </html>
+    
 </template>

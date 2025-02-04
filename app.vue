@@ -7,6 +7,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 if (process.client) {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 }
+console.log("Page rendered");
 </script>
 
 <template>
